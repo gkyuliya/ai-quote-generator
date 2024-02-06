@@ -15,8 +15,13 @@ body {
   max-width: 600px;
 }
 
+h1 {
+  font-size: 55px;
+  color: var(--secondary-color);
+}
+
 h2 {
-  color: var(--primary-color);
+  color: #efb3cd;
   font-size: 40px;
 }
 
@@ -24,11 +29,6 @@ h1,
 h2 {
   font-weight: 800;
   line-height: 1;
-}
-
-h1 {
-  font-size: 55px;
-  color: var(--secondary-color);
 }
 
 form {
@@ -48,11 +48,11 @@ footer {
 }
 
 a {
-  color: var(--secondary-color);
+  color: var(--tertiary-color);
 }
 
 a:hover {
-  color: var(--tertiary-color);
+  color: #e5acc4;
 }
 
 .input {
@@ -75,6 +75,10 @@ a:hover {
   padding: 14px 24px;
 }
 
+.submit-button:hover {
+  background-color: #e5acc4;
+}
+
 .quote {
   font-size: 16px;
   background-color: rgba(81, 146, 110, 0.397);
@@ -84,4 +88,9 @@ a:hover {
   box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em,
     rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
   color: var(--tertiary-color);
+  border-radius: 10px;
+}
+
+img {
+  width: 50px;
 }
