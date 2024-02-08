@@ -13,11 +13,33 @@ body {
 .container {
   margin: 120px auto;
   max-width: 600px;
+  margin-bottom: 0px;
+}
+
+.sakura-ai-top,
+.sakura-ai-bottom {
+  font-family: "Poor Story", system-ui;
+  margin-top: 20px;
+  font-size: 20px;
+}
+
+.sakura-ai-bottom {
+  margin-top: 80px;
+  margin-bottom: 0px;
+}
+
+strong {
+  color: #e4abc3;
+  font-family: "Poor Story", system-ui;
 }
 
 h1 {
   font-size: 55px;
   color: var(--secondary-color);
+}
+
+#feminine {
+  color: #e58dc0;
 }
 
 h2 {
@@ -82,6 +104,7 @@ a:hover {
 
 .quote {
   font-size: 16px;
+  text-align: left;
   background-color: rgba(81, 146, 110, 0.397);
   padding: 20px;
   line-height: 2;
@@ -89,7 +112,11 @@ a:hover {
   box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em,
     rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
   color: var(--tertiary-color);
-  border-radius: 10px;
+}
+
+.quote strong {
+  font-size: 25px;
+  color: #e58dc0;
 }
 
 .cherry-blossom-icon {

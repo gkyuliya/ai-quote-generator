@@ -4,16 +4,24 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poor+Story&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="src/style.css" />
-    <title>AI Quote Generator</title>
+    <title>Sakura AI - Feminine quote generator</title>
   </head>
   <body>
+    <div class="sakura-ai-top"><strong>sakura AI</strong></div>
     <div class="container">
       <img src="images/cherry-blossom.png" alt="" class="cherry-blossom-icon" />
       <header>
         <h1>Welcome to</h1>
 
-        <h2>the AI Quote Generator</h2>
+        <h2>the AI <span id="feminine">Feminine</span> Quote Generator</h2>
       </header>
 
       <main>
@@ -24,6 +32,7 @@
             autofocus
             required
             class="input"
+            id="user-input"
           />
           <input type="submit" class="submit-button" />
         </form>
@@ -48,7 +57,9 @@
           >Netlify.</a
         >
       </footer>
+      <div class="sakura-ai-bottom"><strong>sakura AI</strong></div>
     </div>
+
     <script src="src/script.js"></script>
   </body>
 </html>
