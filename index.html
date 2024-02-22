@@ -12,7 +12,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="src/style.css" />
-    <title>Sakura AI - Feminine quote generator</title>
+    <title>Sakura AI - Mental health quote generator</title>
   </head>
   <body>
     <div class="sakura-ai-top"><strong>sakura AI</strong></div>
@@ -21,22 +21,27 @@
       <header>
         <h1>Welcome to</h1>
 
-        <h2>the AI <span id="feminine">Feminine</span> Quote Generator</h2>
+        <h2>
+          The AI <span id="mental-health">Mental Health</span> Quote Generator
+        </h2>
       </header>
 
       <main>
-        <form class="quote-generator-form">
-          <input
-            type="text"
-            placeholder="Enter a topic for the quote"
-            autofocus
-            required
-            class="input"
-            id="user-input"
-          />
-          <input type="submit" class="submit-button" />
-        </form>
-        <div class="quote" id="quote"></div>
+        <div class="form-container">
+          <form class="quote-generator-form">
+            <input
+              type="text"
+              placeholder="Enter a topic for the quote"
+              autofocus
+              required
+              class="input"
+              id="user-input"
+            />
+            <input type="submit" class="submit-button" />
+          </form>
+          <div class="hint">i.e: Anxiety, Strength, Self-love</div>
+        </div>
+        <div class="quote hidden" id="quote"></div>
       </main>
 
       <footer>

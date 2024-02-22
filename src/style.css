@@ -1,11 +1,11 @@
 :root {
-  --primary-color: rgb(81, 146, 110);
-  --secondary-color: rgb(130, 194, 126);
-  --tertiary-color: #234834;
+  --primary-color: rgb(159, 156, 156);
+  --secondary-color: #f4e0ef;
+  --tertiary-color: #efb3cd;
 }
 
 body {
-  background-color: rgb(215, 254, 213);
+  background-color: var(--secondary-color);
   text-align: center;
   font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
 }
@@ -16,34 +16,22 @@ body {
   margin-bottom: 0px;
 }
 
-.sakura-ai-top,
-.sakura-ai-bottom {
-  font-family: "Poor Story", system-ui;
-  margin-top: 20px;
-  font-size: 20px;
-}
-
-.sakura-ai-bottom {
-  margin-top: 80px;
-  margin-bottom: 0px;
-}
-
 strong {
-  color: #e4abc3;
+  color: #e09eba;
   font-family: "Poor Story", system-ui;
 }
 
 h1 {
   font-size: 55px;
-  color: var(--secondary-color);
+  color: var(--primary-color);
 }
 
-#feminine {
-  color: #e58dc0;
+#mental-health {
+  color: #c0bbbd;
 }
 
 h2 {
-  color: #efb3cd;
+  color: var(--tertiary-color);
   font-size: 40px;
 }
 
@@ -53,14 +41,25 @@ h2 {
   line-height: 1;
 }
 
-form {
-  padding: 30px;
-  background-color: rgba(81, 146, 110, 0.397);
+.form-container {
+  padding: 20px;
+  background-color: #cecdd4;
   border-radius: 10px;
   margin-bottom: 25px;
-  display: flex;
   box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em,
     rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+}
+
+form {
+  display: flex;
+}
+
+.hint {
+  line-height: 1.5;
+  font-size: 12px;
+  margin-top: 5px;
+  text-align: left;
+  color: var(--primary-color);
 }
 
 footer {
@@ -74,7 +73,7 @@ a {
 }
 
 a:hover {
-  color: #e5acc4;
+  color: #e09eba;
 }
 
 .input {
@@ -90,7 +89,7 @@ a:hover {
   background-color: var(--secondary-color);
   border: 2px solid var(--primary-color);
   font-size: 15px;
-  color: var(--tertiary-color);
+  color: var(--primary-color);
   border-radius: 50px;
   width: 20%;
   margin-left: 10px;
@@ -98,25 +97,30 @@ a:hover {
 }
 
 .submit-button:hover {
-  background-color: #e5acc4;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
   transition: all 100ms ease-in-out;
 }
 
 .quote {
   font-size: 16px;
   text-align: left;
-  background-color: rgba(81, 146, 110, 0.397);
+  background-color: #cecdd4;
   padding: 20px;
   line-height: 2;
   border-left: 3px solid var(--primary-color);
   box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em,
     rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
-  color: var(--tertiary-color);
+  color: #878181;
+}
+
+.hidden {
+  display: none;
 }
 
 .quote strong {
   font-size: 25px;
-  color: #e58dc0;
+  color: #e09eba;
 }
 
 .cherry-blossom-icon {
@@ -126,4 +130,33 @@ a:hover {
 
 .cherry-blossom-icon:hover {
   transform: rotateZ(50deg) scale(1.5);
+}
+
+.sakura-ai-top,
+.sakura-ai-bottom {
+  font-family: "Poor Story", system-ui;
+  margin-top: 20px;
+  font-size: 20px;
+}
+
+.sakura-ai-bottom {
+  margin-top: 100px;
+  margin-bottom: 0px;
+}
+
+.generating {
+  animation: blink-animation 1s steps(5, start) infinite;
+  color: #e09eba;
+}
+
+@keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+
+@-webkit-keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
 }
